@@ -1,0 +1,16 @@
+model_list:
+  - model_name: 'bedrock/*'
+    litellm_params:
+      model: 'bedrock/*'
+      aws_region_name: 'os.environ/AWS_BEDROCK_REGION_NAME'
+      aws_access_key_id: 'os.environ/AWS_BEDROCK_ACCESS_KEY_ID'
+      aws_secret_access_key: 'os.environ/AWS_BEDROCK_SECRET_ACCESS_KEY'
+      rpm: 600
+
+litellm_settings:
+  drop_params: True
+  num_retries: 3
+  request_timeout: 10
+
+general_settings:
+  master_key: 'os.environ/LITELLM_MASTER_KEY'
