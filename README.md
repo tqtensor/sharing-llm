@@ -18,9 +18,9 @@ Main reference: https://docs.litellm.ai/docs/proxy/user_keys#request-format
 ### Chat
 
 ```python
-import openai
+from openai import OpenAI
 
-client = openai.OpenAI(
+client = OpenAI(
     api_key="please-contact", base_url="https://llm.tqtensor.com"
 )
 
@@ -38,7 +38,6 @@ print(response)
 
 ```python
 from openai import OpenAI
-
 
 client = OpenAI(
     api_key="please-contact", base_url="https://llm.tqtensor.com"
